@@ -11,5 +11,6 @@ def multiple_letter_count(phrase):
     for letter in phrase:
         if letter not in freq_counter:
             freq_counter[letter] = 1
-        else: freq_counter[letter] += 1
+        else:
+            freq_counter[letter] += 1
     return freq_counter
