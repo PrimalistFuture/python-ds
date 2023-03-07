@@ -11,12 +11,6 @@ def flip_case(phrase, to_swap):
         'AaaaHHH'
 
     """
-    # initialize a variable for flipped_case_phrase
-    # iterate over the phrase
-    #   compare that letter with the uppercase version of the letter
-    #   if they match, lowercase the letter and concat on flipped_case_phrase
-    #   else, uppercase and concat
-    #   return
 
     flipped_case_phrase = ""
     for letter in phrase:
