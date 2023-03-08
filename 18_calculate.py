@@ -1,3 +1,4 @@
+from math import (floor)
 def calculate(operation, a, b, make_int=False, message='The result is'):
     """Perform operation on a + b, ()possibly truncating) & returning w/msg.
 
@@ -28,3 +29,14 @@ def calculate(operation, a, b, make_int=False, message='The result is'):
           ...
         ValueError: Invalid Operation
     """
+    avail_operations = ["add", "subtract", "multiply", "divide"]
+
+    if operation not in avail_operations:
+        return ValueError("Invalid Operation")
+
+    if operation == "add":
+        sum = a + b
+        if make_int:
+            sum = floor(sum)
+        return f"{message} {sum}"
+
